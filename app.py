@@ -21,7 +21,7 @@ queries = []# This will store submitted queries
 solutions = []
 
 # Route for the home page
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
     return render_template('index.html')
 
@@ -59,12 +59,12 @@ def company_register():
 
     return render_template('company_register.html')
 
-@app.route('/company')
+@app.route('/company', methods=['GET'])
 def company_page():
     return render_template('company.html')  # Make sure this template exists
 
 # Route for the main user page
-@app.route('/main')
+@app.route('/main', methods=['GET'])
 def main_page():
     return render_template('1.html')
 
