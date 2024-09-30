@@ -134,13 +134,13 @@ document.getElementById('query-form').addEventListener('submit', function (event
 
 // Function to get queries
 function getQueries() {
-    fetch('http://127.0.0.1:5000/api/queries')
+    fetch('/api/queries')
         .then(response => response.json())
         .then(data => {
             const queryContainer = document.getElementById('queries-container');
-            queryContainer.innerHTML = ''; // Clear existing content
+            queryContainer.innerHTML = ''; 
 
-            data.forEach(query => {
+            data.queries.forEach(query => {
                 const queryHtml = `
             <div>
               <p>${query.query}</p>
