@@ -1,0 +1,165 @@
+/* General body styles */
+body {
+  background-color: #f8f9fa; /* Light background color for the body */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #343a40; /* Dark background for navbar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for navbar */
+}
+
+.nav-link {
+  color: #ffffff; /* White text color for navbar links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #d3d3d3; /* Lighter color on hover */
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('../static/images/5172658.jpg'); /* Change to your actual image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0; /* Padding for hero section */
+  min-height: 60vh; /* Increased height for hero section */
+  text-align: center; /* Center align text */
+}
+
+.hero h1 {
+  font-size: 3.5rem; /* Larger font size for title */
+  font-weight: bold; /* Bold font */
+}
+
+.hero p {
+  font-size: 1.5rem; /* Font size for subtitle */
+}
+
+/* Share Your Idea section styles */
+#share-idea {
+  background-image: url('../static/images/5172658.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+ /* Rounded corners for the entire section */
+  padding: 40px; /* Padding for the section */
+  box-shadow: 0 4px 15px rgba(252, 251, 251, 0.1); /* Subtle shadow for depth */
+}
+#share-idea h2 {
+  color: #faf9f9; /* Change to your desired color */
+}
+
+#share-idea label {
+  color: #fcfbfb; /* Change to your desired color */
+}
+#companies{
+  background-image: url('../static/images/5172658.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+ /* Rounded corners for the entire section */
+  padding: 40px; /* Padding for the section */
+  box-shadow: 0 4px 15px rgba(252, 251, 251, 0.1);
+
+}
+/* Form styles */
+#ideaForm {
+  background-color: rgba(252, 250, 250, 0.237); /* Slightly transparent white background for the form */
+   /* Border color */ /* Rounded corners */
+  padding: 30px; /* Padding for form */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Input field styles */
+.form-control {
+  border-radius: 5px; /* Rounded corners for input fields */
+  border: 1px solid #ced4da; /* Border color for input fields */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border-color: #007bff; /* Border color for primary button */
+  border-radius: 5px; /* Rounded corners for buttons */
+  font-weight: bold; /* Bold font for buttons */
+  padding: 10px; /* Padding for button */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  border-color: #0056b3; /* Darker border on hover */
+}
+/* About Us section styles */
+#about {
+  padding: 40px 0; /* Padding for About Us section */
+  background-image: url('../static/images/5172658.jpg');
+}
+
+#about h2 {
+  font-size: 2rem; /* Heading size */
+  font-weight: bold; /* Bold heading */
+}
+
+#about p {
+  font-size: 1.2rem; /* Font size for About Us text */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+/* Footer styles */
+footer {
+  background-color: #14181d; /* Dark background for footer */
+  color: white; /* Text color */
+  padding: 20px 0; /* Padding for footer */
+  text-align: center; /* Center align text */
+}
+
+/* Button styles */
+.btn {
+  border-radius: 5px; /* Rounded corners for buttons */
+  font-weight: bold; /* Bold font for buttons */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border-color: #007bff; /* Border color for primary button */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  border-color: #0056b3; /* Darker border on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  .hero p {
+    font-size: 1.2rem; /* Smaller subtitle font size for mobile */
+  }
+
+  #about p, #share-idea p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+}
+@media (max-width: 768px) {
+  #ideaForm {
+      padding: 20px; /* Less padding for mobile */
+  }
+
+  .form-control {
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+}
